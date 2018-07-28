@@ -35,9 +35,9 @@ class ChuckcmsTemplateStarterTableSeeder extends Seeder
         $json = [];
 
         // create template
-        Template::create([
-            'name' => 'ChuckCMS Template Starter',
-            'slug' => 'chuckcms-template-starter',
+        Template::updateOrCreate(
+            ['slug' => 'chuckcms-template-starter'],
+            ['name' => 'ChuckCMS Template Starter',
             'hintpath' => 'chuckcms-template-starter',
             'path' => 'chuckbe/chuckcms-template-starter',
             'type' => 'default',
@@ -47,7 +47,7 @@ class ChuckcmsTemplateStarterTableSeeder extends Seeder
             'css' => $css,
             'js' => $js,
             'json' => $json,
-            'active' => 1
-        ]);
+            'active' => 1]
+        );
     }
 }

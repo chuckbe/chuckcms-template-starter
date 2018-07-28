@@ -41,12 +41,12 @@ class PublishStarter extends Command
         $seeder = new ChuckcmsTemplateStarterTableSeeder();
         $seeder->run();
         
-        $this->info('Validating your information and generating a new site...');
+        $this->info('Just a moment... ChuckCMS is generating your template.');
 
         $this->info('.         .');
         $this->info('..         ..');
         $this->info('...         ...');
-        $this->info('.... NAIROBI ....');
+        $this->info('.... STARTER ....');
         $this->info('...         ...');
         $this->info('..         ..');
         $this->info('.         .');

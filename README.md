@@ -6,7 +6,7 @@
 
 2. Publish the theme:
 
-``` php artisan chuckcms-template-antwerp:publish ```
+``` php artisan chuckcms-template-starter:publish ```
 
 3. Publish public assets:
 
