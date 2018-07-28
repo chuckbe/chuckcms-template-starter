@@ -9,30 +9,39 @@
         <title>@yield('title')</title>
         
         @yield('meta')
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <!-- Styles -->
-        <link href="{{ asset('chuckbe/chuckcms/css/custom.css') }}" rel="stylesheet">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+        @if(array_key_exists('raw', $template->fonts))
+        <link href="https://fonts.googleapis.com/css?family={{ $template->fonts['raw'] }}" rel="stylesheet" type="text/css" />
+        @endif
+        @foreach($template->css as $cssKey => $cssValue)
+            @if($cssValue['asset'] == 'true')
+                <link rel="stylesheet" href="{{ asset($cssValue['href']) }}" type="text/css" />
+            @endif
+            @if($cssValue['asset'] == 'false')
+                <link rel="stylesheet" href="{{ $cssValue['href'] }}" type="text/css" />
+            @endif
+        @endforeach
         @yield('css')
 
     </head>
     <body>
     <div class="body">
         
-    @include('chuckcms::templates.' . $template->slug . '.includes.header')
+    @include($template->hintpath.'::templates.' . $template->slug . '.includes.header')
         <div class="container">
             @yield('content')
         </div>
-    @include('chuckcms::templates.' . $template->slug . '.includes.footer')
+    @include($template->hintpath.'::templates.' . $template->slug . '.includes.footer')
 
     </div>
-        <script src="{{ asset('chuckbe/chuckcms/js/app.js') }}"></script>
+        @foreach($template->js as $jsKey => $jsValue)
+            @if($jsValue['asset'] == 'true')
+                <script src="{{ asset($jsValue['href']) }}"></script>
+            @endif
+            @if($jsValue['asset'] == 'false')
+                <script src="{{ $jsValue['href'] }}"></script>
+            @endif
+        @endforeach
 
         <script type="text/javascript">
             var path = window.location.pathname.split('/');
@@ -60,30 +69,6 @@
                 });
             })(jQuery);
         </script>
-
-        <script type="text/javascript">
-            (function(document,navigator,standalone) {
-                // prevents links from apps from oppening in mobile safari
-                // this javascript must be the first script in your <head>
-                if ((standalone in navigator) && navigator[standalone]) {
-                    var curnode, location=document.location, stop=/^(a|html)$/i;
-                    document.addEventListener('click', function(e) {
-                        curnode=e.target;
-                        while (!(stop).test(curnode.nodeName)) {
-                            curnode=curnode.parentNode;
-                        }
-                        // Condidions to do this only on links to your own app
-                        // if you want all links, use if('href' in curnode) instead.
-                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
-                            e.preventDefault();
-                            location.href = curnode.href;
-                        }
-                    },false);
-                }
-            })(document,window.navigator,'standalone');
-        </script>
-
-        
 
         @yield('scripts')
 

@@ -2,7 +2,7 @@
 
 namespace Chuckbe\ChuckcmsTemplateStarter;
 
-use Chuckbe\ChuckcmsTemplateNairobi\Commands\PublishStarter;
+use Chuckbe\ChuckcmsTemplateStarter\Commands\PublishStarter;
 
 use Illuminate\Support\ServiceProvider;
 

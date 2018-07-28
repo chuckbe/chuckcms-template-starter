@@ -1,4 +1,4 @@
-@extends('chuckcms::templates.' . $template->slug . '.layouts.base')
+@extends($template->hintpath.'::templates.' . $template->slug . '.layouts.base')
 
 @section('title')
     {{ $page->title }}

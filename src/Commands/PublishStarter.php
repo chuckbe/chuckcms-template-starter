@@ -2,7 +2,7 @@
 
 namespace Chuckbe\ChuckcmsTemplateStarter\Commands;
 
-use Chuckbe\ChuckcmsTemplateNairobi\seeds\ChuckcmsTemplateStarterTableSeeder;
+use Chuckbe\ChuckcmsTemplateStarter\seeds\ChuckcmsTemplateStarterTableSeeder;
 use Illuminate\Console\Command;
 
 class PublishStarter extends Command
