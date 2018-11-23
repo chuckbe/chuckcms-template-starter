@@ -6,7 +6,7 @@
     "require": {
         "php": ">=7.0.0",
         "laravel/framework": "~5.5||~5.6",
-        "chuckbe/chuckcms": "~0.1.0@beta"
+        "chuckbe/chuckcms": "~0.1"
     },
     "authors": [
         {
