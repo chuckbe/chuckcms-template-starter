@@ -12,6 +12,10 @@
 
 ``` php artisan vendor:publish --tag=chuckcms-template-starter-public --force ``` 
 
+4. Publish views:
+
+``` php artisan vendor:publish --tag=chuckcms-template-starter-views --force ``` 
+
 ### License 
 
-Theme is licensed under MIT license © 2018 - Chuck
+Theme is licensed under MIT license © 2020 - Chuck
