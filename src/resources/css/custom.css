@@ -1,4 +1,160 @@
+body {
+  font-family: "Poppins";
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.bg-hover-dark:hover{
+  background: #000000!important;
+  border-color:#000000!important;
+}
+.bg-hover-dark:hover a, a.bg-hover-dark:hover{
+  color: #FFFFFF!important;
+}
+.text-dark-hover-white {
+  color: #343a40!important;
+}
+.text-dark-hover-white:hover {
+  color: #FFF!important;
+}
+/* HAMBURGER ICON ANIMATION */
+.icon-bar {
+  width: 22px; 
+  height: 2px;
+  background-color: #B6B6B6;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+/* HAMBURGER ICON ANIMATION */
+
+.ml-min-15 { margin-left:-15px!important; }
+.mr-min-15 { margin-right:-15px!important; }
+
 .mb-none{margin-bottom:0px!important;}
+
+.border-1 { border-width:1px !important; }
+.border-2 { border-width:2px !important; }
+.border-3 { border-width:3px !important; }
+.border-4 { border-width:4px !important; }
+.border-5 { border-width:5px !important; }
+.border-10 { border-width:10px !important; }
+
+.border-hover-1:hover { border-width:1px !important; }
+.border-hover-2:hover { border-width:2px !important; }
+.border-hover-3:hover { border-width:3px !important; }
+.border-hover-4:hover { border-width:4px !important; }
+.border-hover-5:hover { border-width:5px !important; }
+.border-hover-10:hover { border-width:10px !important; }
+
+.border-radius-top-left-05 { border-top-left-radius: 0.5rem!important; }
+.border-radius-top-right-05 { border-top-right-radius: 0.5rem!important; }
+.border-radius-bottom-left-05 { border-bottom-left-radius: 0.5rem!important; }
+.border-radius-bottom-right-05 { border-bottom-right-radius: 0.5rem!important; }
+
+.fs-3 { font-size: 3rem!important; }
+.fs-4 { font-size: 4rem!important; }
+
+.rotate {
+  transform: rotate(90deg);
+  /* Legacy vendor prefixes that you probably don't need... */
+  /* Safari */
+  -webkit-transform: rotate(90deg);
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+  /* IE */
+  -ms-transform: rotate(90deg);
+  /* Opera */
+  -o-transform: rotate(90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+.bg-instagram {
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+
+/*.bg-shop-online {
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5));
+  transition: background 1s ease-in-out;
+}
+.bg-shop-online:hover {
+  background: linear-gradient(rgba(25, 25, 5, 0.6), rgba(255, 255, 255, 0.9));
+}*/
+
+.zoom-container { overflow: hidden;
+    position: relative;
+    cursor: pointer; }
+
+.bg-zoom-hover {
+  transition: transform 0.5s;
+}
+
+.bg-zoom-hover:hover {
+  transform: scale(1.03);
+}
+
+.bg-shop-online {
+  position: relative;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  z-index: 1;
+}
+
+.bg-shop-online::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(25, 25, 5, 0.2), rgba(23, 25, 5, 0.1));
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.bg-shop-online:hover::before {
+  opacity: 1;
+}
 
 /* START OF SUBMENU */
 .dropdown-submenu{ position: relative; }
@@ -37,6 +193,80 @@
   border-radius: 6px 0 6px 6px;
 }
 /* END OF SUBMENU*/
+
+/* PROJECTS BRANDS*/
+
+.brands-box {
+  position: relative;
+  height: auto;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.brands-box:hover .image {
+  opacity: 0.3;
+}
+
+.brands-box:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-family: "Poppins";
+}
+
+.text:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* PROJECTS MODELS s*/
+
+.models-box {
+  position: relative;
+  height: 220px;
+}
+
+.models-box:hover .image {
+  opacity: 0.3;
+}
+
+.models-box:hover .middle {
+  opacity: 1;
+}
+
+/* CONTACTFORM */
+
+#ccms_form_contact label {
+  display: none;
+}
+
+#ccms_form_contact textarea {
+  height: 8em;
+}
+
+/* END OF CONTACTFORM*/
+
+
 @media (min-width: 768px) { 
 
 }

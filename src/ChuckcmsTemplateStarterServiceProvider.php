@@ -15,7 +15,6 @@ class ChuckcmsTemplateStarterServiceProvider extends ServiceProvider
      */
     public function boot()
     {   
-
         if ($this->app->runningInConsole()) {
             $this->commands([
                 PublishStarter::class,
@@ -27,9 +26,10 @@ class ChuckcmsTemplateStarterServiceProvider extends ServiceProvider
             __DIR__.'/resources' => public_path('chuckbe/chuckcms-template-starter'),
         ], 'chuckcms-template-starter-public');
 
-        // $this->publishes([
-        //     __DIR__ . '/config/chuckcms-template-starter.php' => config_path('chuckcms-template-starter'),
-        // ], 'chuckcms-template-starter-config');
+        $this->publishes([
+            __DIR__.'/views' => resource_path('views/vendor/chuckcms-template-starter'),
+        ], 'chuckcms-template-starter-views');
+
     }
 
     /**
@@ -40,9 +40,5 @@ class ChuckcmsTemplateStarterServiceProvider extends ServiceProvider
     public function register()
     {
         $this->loadViewsFrom(__DIR__.'/views', 'chuckcms-template-starter');
-
-        // $this->mergeConfigFrom(
-        //     __DIR__ . '/config/chuckcms-template-starter.php', 'chuckcms-template-starter-config'
-        // );
     }
 }

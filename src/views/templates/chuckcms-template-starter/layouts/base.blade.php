@@ -28,9 +28,7 @@
     <div class="body">
         
     @include($template->hintpath.'::templates.' . $template->slug . '.includes.header')
-        <div class="container">
-            @yield('content')
-        </div>
+    @yield('content')        
     @include($template->hintpath.'::templates.' . $template->slug . '.includes.footer')
 
     </div>
