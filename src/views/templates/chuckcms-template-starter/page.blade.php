@@ -74,11 +74,6 @@
 @endsection
 
 @section('content')
-
-
-	<h1>{{ $page->title }}</h1>
-	<hr>
-	<br>
     @if($pageblocks !== null)
         @foreach($pageblocks as $pageblock)
             {!! $pageblock['body'] !!}
