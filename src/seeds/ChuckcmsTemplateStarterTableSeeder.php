@@ -14,25 +14,25 @@ class ChuckcmsTemplateStarterTableSeeder extends Seeder
      */
     public function run()
     {
-    	// php artisan db:seed --class=Chuckbe\\ChuckcmsTemplateStarter\\seeds\\ChuckcmsTemplateStarterTableSeeder
+        // php artisan db:seed --class=Chuckbe\\ChuckcmsTemplateStarter\\seeds\\ChuckcmsTemplateStarterTableSeeder
         $fonts = [];
         $fonts['raw'] = 'Poppins:100,200,300,400,500,600,700,800,900';
-        
+
         $css = [];
-        $css['bootstrap']['href'] = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
+        $css['bootstrap']['href'] = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css';
         $css['bootstrap']['asset'] = 'false';
 
         $css['custom']['href'] = 'chuckbe/chuckcms-template-starter/css/custom.css';
         $css['custom']['asset'] = 'true';
-        
-        $js = []; 
-        $js['jquery']['href'] = 'https://code.jquery.com/jquery-3.2.1.slim.min.js';
-        $js['jquery']['asset'] = 'false';https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+
+        $js = [];
+        $js['jquery']['href'] = 'https://code.jquery.com/jquery-3.2.1.min.js';
+        $js['jquery']['asset'] = 'false';
 
         $js['popperjs']['href'] = 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js';
         $js['popperjs']['asset'] = 'false';
 
-        $js['bootstrapjs']['href'] = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js';
+        $js['bootstrapjs']['href'] = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js';
         $js['bootstrapjs']['asset'] = 'false';
 
         $js['masonry']['href'] = 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js';
@@ -78,17 +78,19 @@ class ChuckcmsTemplateStarterTableSeeder extends Seeder
         // create template
         Template::updateOrCreate(
             ['slug' => 'chuckcms-template-starter'],
-            ['name' => 'ChuckCMS Template Starter',
-            'hintpath' => 'chuckcms-template-starter',
-            'path' => 'chuckbe/chuckcms-template-starter',
-            'type' => 'default',
-            'version' => '0.2',
-            'author' => 'Karel Brijs (karel@chuck.be)',
-            'fonts' => $fonts,
-            'css' => $css,
-            'js' => $js,
-            'json' => $json,
-            'active' => 1]
+            [
+                'name' => 'ChuckCMS Template Starter',
+                'hintpath' => 'chuckcms-template-starter',
+                'path' => 'chuckbe/chuckcms-template-starter',
+                'type' => 'default',
+                'version' => '0.2',
+                'author' => 'Karel Brijs (karel@chuck.be)',
+                'fonts' => $fonts,
+                'css' => $css,
+                'js' => $js,
+                'json' => $json,
+                'active' => 1
+            ]
         );
     }
 }
