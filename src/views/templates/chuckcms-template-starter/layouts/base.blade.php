@@ -70,15 +70,17 @@
 
         @yield('scripts')
 
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
-        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85594949-1"></script> -->
-        <script>
-          // window.dataLayer = window.dataLayer || [];
-          // function gtag(){dataLayer.push(arguments)};
-          // gtag('js', new Date());
+        @if(ChuckSite::getSetting('integrations.ga-id') !== null)
+            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id={{ ChuckSite::getSetting('integrations.ga-id') }}"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)};
+            gtag('js', new Date());
 
-          // gtag('config', 'UA-85594949-1');
+            gtag('config', '{{ ChuckSite::getSetting('integrations.ga-id') }}');
         </script>
+        @endif
 
     </body>    
 
