@@ -70,36 +70,20 @@
 @endsection
 
 @section('scripts')
-
+@if(session('order_number'))
+{!! ChuckEcommerce::followupScripts(session('order_number')) !!}
+@endif
 @endsection
 
 @section('content')
-
-<div class="container">
-	<div class="row">
-		@foreach(ChuckProduct::all() as $product)
-        <div class="col-6 col-sm-4 col-lg-3">
-            <div class="product-card">
-                <a class="product-thumb" href="{{ ChuckProduct::fullUrl($product) }}">
-                    <img src="{{ ChuckProduct::featuredImage($product) }}" class="img-fluid" alt="{{ ChuckProduct::title($product) }}">
-                </a>
-                <h3 class="product-title"><small><a href="{{ ChuckProduct::fullUrl($product) }}">{{ ChuckProduct::title($product) }}</a></small></h3>
-                <h4 class="product-price text-right">@if(ChuckProduct::hasDiscount($product)) <del>{{ ChuckProduct::highestPrice($product) }}</del>{{ ChuckProduct::highestPrice($product) }} @else {{ ChuckProduct::lowestPrice($product) }} @endif</h4>
-                <div class="product-buttons text-right">
-                    <button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="Whishlist">
-                        <i class="fas fa-heart"></i>
-                    </button>
-                    <button class="btn btn-outline-success btn-sm" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-circle-check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-        @endforeach
-	</div>
-</div>
-
+	
     @if($pageblocks !== null)
         @foreach($pageblocks as $pageblock)
             {!! $pageblock['body'] !!}
         @endforeach
     @endif
+    
+    @if(session('order_number'))
+    {!! ChuckEcommerce::followupContent(session('order_number')) !!}
+	@endif
 @endsection

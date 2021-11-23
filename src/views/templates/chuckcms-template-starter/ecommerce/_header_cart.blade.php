@@ -1,0 +1,1 @@
+<a href="{{ route('module.ecommerce.cart.overview') }}" class="m-2 shop-icon text-dark" id="ce_shoppingCartDetailComponent"><i class="fas fa-shopping-cart"></i><span class="badge badge-secondary ml-1" id="cart-number">{{ ChuckCart::instance('shopping')->content()->count() }}</span></a>

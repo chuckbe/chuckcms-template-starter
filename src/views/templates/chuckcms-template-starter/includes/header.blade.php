@@ -33,6 +33,25 @@
         <span class="icon-bar bottom-bar"></span>               
     </button>
 
+    @if(class_exists('\ChuckEcommerce'))
+    <div class="dropdown my-4 ml-auto order-2 order-lg-4">
+        <a class="m-2 shop-icon" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
+        <div class="dropdown-menu dropdown-menu-account dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            @if(Auth::check())
+            <a class="dropdown-item" href="{{ route('module.ecommerce.account.index') }}">Account</a>
+            <a class="dropdown-item" href="{{ route('module.ecommerce.account.order.index') }}">Bestellingen</a>
+            <a class="dropdown-item" href="{{ route('module.ecommerce.account.address.index') }}">Adressen</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Uitloggen</a>
+            @else
+            <a class="dropdown-item" href="{{ route('login') }}">Aanmelden</a>
+            <a class="dropdown-item" href="{{ route('register') }}">Account maken</a>
+            @endif
+        </div>
+        @include($template->hintpath.'::templates.' . $template->slug . '.ecommerce._header_cart')
+    </div>
+    @endif
+
       <div class="collapse navbar-collapse font-weight-bold" id="navbarSupportedContent">
         {!! ChuckMenu::renderFrontEnd('chuckcms-template-starter', 'menu-front-end', 'header') !!}
       </div>
