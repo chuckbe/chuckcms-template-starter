@@ -31,12 +31,12 @@
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>               
-        </button>
+    </button>
 
     @if(class_exists('\ChuckEcommerce'))
-    <div class="dropdown my-4 ms-auto order-2 order-lg-4">
-        <a class="m-2 shop-icon" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
-        <div class="dropdown-menu dropdown-menu-account dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+    <div class="dropdown mt-4 mb-3 pb-1 ms-auto order-2 order-lg-4">
+        <a class="m-2 shop-icon text-color-main text-decoration-none" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fal fa-user"></i></a>
+        <div class="dropdown-menu dropdown-menu-account dropdown-menu-right mt-2" aria-labelledby="dropdownMenuLink">
             @if(Auth::check())
             <a class="dropdown-item" href="{{ route('module.ecommerce.account.index') }}">Account</a>
             <a class="dropdown-item" href="{{ route('module.ecommerce.account.order.index') }}">Bestellingen</a>
