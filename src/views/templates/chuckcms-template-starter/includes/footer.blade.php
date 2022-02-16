@@ -4,7 +4,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-none mt-3 mb-3 ps-0 pe-0">
                 <a class="navbar-brand" href="{{ ChuckSite::getSite('domain') }}"><img src="{{ ChuckSite::getSite('domain') }}{{ ChuckSite::getSetting('logo.href') }}" alt="{{ config('app.name', 'Laravel') }}" height="60"></a>
                 <div class="footernav font-weight-bold fw-bold ms-auto">
-                    {!! ChuckMenu::renderFrontEnd('chuckcms-template-starter', 'menu-front-end', 'header') !!}
+                    {!! ChuckMenu::renderFrontEnd('chuckcms-template-starter', 'menu-front-end', 'footer') !!}
                 </div>
                 <div class="socials">
                     <ul class="list-unstyled list-inline social-icons d-flex mb-0 ms-3">
