@@ -34,7 +34,7 @@
         </button>
 
     @if(class_exists('\ChuckEcommerce'))
-    <div class="dropdown my-4 ml-auto order-2 order-lg-4">
+    <div class="dropdown my-4 ms-auto order-2 order-lg-4">
         <a class="m-2 shop-icon" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
         <div class="dropdown-menu dropdown-menu-account dropdown-menu-right" aria-labelledby="dropdownMenuLink">
             @if(Auth::check())

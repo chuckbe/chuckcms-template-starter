@@ -1,5 +1,5 @@
 @if(isset($menus))
-<ul class="navbar-nav ml-auto">
+<ul class="navbar-nav ms-auto">
     @foreach($menus as $m)
         @if($m->depth == 0)
             <li class="nav-item{{ $menus->where('depth', 1)->where('parent', $m->id)->count() > 0 ? ' dropdown' : '' }}">

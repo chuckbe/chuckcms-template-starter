@@ -1,5 +1,5 @@
 :root {
-  --main-color: #ff7600;
+  --main-color: rgb(255, 118, 0);
 }
 body {
   font-family: "Epilogue";
@@ -356,10 +356,25 @@ body {
   font-weight: 500;
 }
 
+.navbar-nav .dropdown-menu{
+  right: 0;
+  margin-top: 0.5rem;
+}
+
+.navbar-nav .dropdown-menu li:hover{
+  background-color: rgba(255, 118, 0, 0.5);
+}
+
+.navbar-nav .dropdown-menu li a{
+  color: #000;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  display: block;
+}
+
 .rounded {
   border-radius: 10px !important;
 }
-
 
 .underline::after {
   content: url('../img/Underline.svg');
@@ -397,9 +412,8 @@ body {
 
 .chuck-btn:hover {
   background-color: #FFF !important;
-  color: #000000 !important;
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-
+  color: #000 !important;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
 }
 
 .chuck-btn .after {
@@ -482,8 +496,6 @@ body {
   color: rgba(255,255,255, 1);
 }
 
-
-
 footer ul li a{
   text-decoration: none;
 }
@@ -491,6 +503,26 @@ footer ul li a{
 @media (max-width: 992px) { 
   .footernav ul.navbar-nav {
     flex-direction: row;
+  }
+  .navbar-nav .nav-item{
+    padding: 0.5rem 0;
+  }
+  .navbar .navbar-nav {
+    margin-right: auto;
+  }
+  .navbar .navbar-nav .dropdown{
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar .navbar-nav .dropdown a{
+    order: 1;
+  }
+  .navbar .navbar-nav .dropdown::after{
+    order: 2;
+  }
+  .navbar .navbar-nav .dropdown ul{
+    order: 3;
+    margin-left: 0.5rem;
   }
 }
 @media (max-width: 768px) { 

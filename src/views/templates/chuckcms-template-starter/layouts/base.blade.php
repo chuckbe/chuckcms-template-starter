@@ -70,6 +70,10 @@
                 $(this).parent().siblings().removeClass('open');
                 $(this).parent().toggleClass('open');
             });
+            $(".navbar-expand-lg .navbar-nav .nav-link.dropdown-toggle").click(function(e){
+                e.preventDefault();
+                $(this).parent().find('ul.dropdown-menu').css('display') == 'none' ? $(this).parent().find('ul.dropdown-menu').css('display','block') : $(this).parent().find('ul.dropdown-menu').css('display','none');
+            });
         });
     })(jQuery);
 </script>
