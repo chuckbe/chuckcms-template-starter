@@ -44,7 +44,7 @@
                 </ul>
             </div>
             <div class="col-12 col-xl-6 d-flex py-2">
-                <span class="text-muted ms-auto me-auto me-xl-0 text-center">
+                <span class="text-muted ms-auto me-auto me-xl-0 text-center small">
                     © Copyright{{ date('Y') }}
                     | 
                     All Rights Reserved 

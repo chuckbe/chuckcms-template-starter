@@ -25,8 +25,8 @@
 </div> --}}
 
 <div class="container bg-none">
-    <nav class="navbar navbar-expand-lg navbar-light bg-none mt-3 mb-3 pl-0 pr-0">
-      <a class="navbar-brand" href="{{ ChuckSite::getSite('domain') }}"><img src="{{ ChuckSite::getSite('domain') }}{{ ChuckSite::getSetting('logo.href') }}" alt="{{ config('app.name', 'Laravel') }}" height="40"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-none my-2 ps-0 pe-0">
+      <a class="navbar-brand" href="{{ ChuckSite::getSite('domain') }}"><img src="{{ ChuckSite::getSite('domain') }}{{ ChuckSite::getSetting('logo.href') }}" alt="{{ config('app.name', 'Laravel') }}" height="60"></a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>

@@ -77,17 +77,17 @@
 <div class="container pb-5">
     <div class="row pt-0 pb-3 py-lg-5 flex-column-reverse flex-lg-row">
         <div class="col-12 col-lg-6">
-            <div class="py-5">
-                <h1 class="display-3 fw-normal lh-sm">
+            <div class="py-5 pe-lg-5 me-lg-5">
+                <h1 class="display-4 fw-normal lh-sm">
                     Hier komt een 
                     <span class="underline position-relative fw-600">slogan</span> over jouw 
                     onderneming
                 </h1>
-                <p class="py-3">
+                <p class="py-3 h5">
                     Lorem ipsum dolor sit amet, consectetur <br>
                     adipiscing elit. sed do eiusmod tempor
                 </p>
-                <button class="btn chuck-btn bg-main-color text-white px-4 rounded d-flex flex-row"><span class="btn-text">Button #1</span><span class="after">></span></button>
+                <button class="btn chuck-btn bg-main-color text-white px-4 rounded d-flex flex-row mt-4"><span class="btn-text">Button #1</span><span class="after">></span></button>
             </div>
         </div>
         <div class="col-12 col-lg-6 px-0 px-lg-2">
@@ -97,8 +97,8 @@
 </div>
 <div class="container">
     <div class="row pt-0 pb-3 py-lg-5 justify-content-center">
-        <div class="col-12 col-lg-8 col-xl-7">
-            <p class="h1 text-center lh-sm">
+        <div class="col-12 col-md-8 col-lg-7 col-xl-6">
+            <p class="h2 text-center lh-sm">
                 Hier komen enkele 
                 <span class="underline position-relative fw-600">interessante</span>
                 kenmerken of diensten
@@ -108,7 +108,7 @@
     <div class="row py-5 gy-5 gx-0 gx-xl-5">
         <div class="col-12 col-lg-4">
             <div class="card text-center border-0">
-                <span class="h2">
+                <span class="h2 cardicon">
                     <i class="fas fa-medal text-color-main shadow-sm p-3 rounded"></i>
                 </span>
                 <div class="card-body pt-5">
@@ -122,7 +122,7 @@
         </div>
         <div class="col-12 col-lg-4">
             <div class="card text-center border-0">
-                <span class="h2">
+                <span class="h2 cardicon">
                     <i class="fas fa-chair text-color-main shadow-sm p-3 rounded"></i>
                 </span>
                 <div class="card-body pt-5">
@@ -136,7 +136,7 @@
         </div>
         <div class="col-12 col-lg-4">
             <div class="card text-center border-0">
-                <span class="h2">
+                <span class="h2 cardicon">
                     <i class="fas fa-palette text-color-main shadow-sm p-3 rounded"></i>
                 </span>
                 <div class="card-body pt-5">
@@ -151,12 +151,12 @@
     </div>
 </div>
 <div class="container">
-    <div class="row py-5">
+    <div class="row py-5 justify-content-center">
         <div class="col-12 col-lg-6 d-flex">
             <div class="ms-0 ms-xl-5 me-auto rounded overflow-hidden tile h-100 scale" style="background-image: url({{asset('chuckbe/chuckcms-template-starter/img/pillows.jpg')}})"></div>
         </div>
-        <div class="col-12 col-lg-6 py-5">
-            <p class="h1 lh-sm">
+        <div class="col-12 col-lg-6 col-xl-5 py-5">
+            <p class="h2 lh-sm">
                 Hier komt de titel van je
                 <span class="underline position-relative fw-600">boeiende</span>
                 tekstblock
@@ -168,14 +168,14 @@
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                 </p>
             </div>
-            <button class="btn chuck-btn bg-main-color text-white px-4 rounded d-flex flex-row"><span class="btn-text">Button #1</span><span class="after">></span></button>
+            <button class="btn chuck-btn bg-main-color text-white px-4 rounded d-flex flex-row mt-4"><span class="btn-text">Button #1</span><span class="after">></span></button>
         </div>
     </div>
 </div>
 <div class="container">
-    <div class="row py-5 flex-column-reverse flex-lg-row">
-        <div class="col-12 col-lg-6 py-5 ps-xl-5">
-            <p class="h1 lh-sm">
+    <div class="row py-5 justify-content-center flex-column-reverse flex-lg-row">
+        <div class="col-12 col-lg-6 col-xl-5 py-5 ps-xl-5">
+            <p class="h2 lh-sm">
                 Hier komt de titel van je
                 <span class="underline position-relative fw-600">boeiende</span>
                 tekstblock
@@ -187,7 +187,7 @@
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                 </p>
             </div>
-            <button class="btn chuck-btn bg-main-color text-white px-4 rounded d-flex flex-row"><span class="btn-text">Button #1</span><span class="after">></span></button>
+            <button class="btn chuck-btn bg-main-color text-white px-4 rounded d-flex flex-row mt-4"><span class="btn-text">Button #1</span><span class="after">></span></button>
         </div>
         <div class="col-12 col-lg-6 d-flex">
             <div class="me-0 me-xl-5 ms-auto rounded overflow-hidden tile h-100 scale" style="background-image: url({{asset('chuckbe/chuckcms-template-starter/img/pillows.jpg')}})"></div>
@@ -198,23 +198,23 @@
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7">
-                <p class="h1 lh-sm text-white text-center">
+                <p class="h2 lh-sm text-white text-center px-md-5 px-lg-0 px-xl-5">
                     Hier komen enkele interessante
                     kenmerken of diensten
                 </p>
-                <p class="text-white text-center py-3">
+                <p class="text-white text-center py-3 px-xl-4">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 </p>
-                <button class="btn bg-white chuck-btn shadow-sm px-4 py-2 rounded fw-600 mx-auto d-flex flex-row"><span class="btn-text">Button #1</span><span class="after">></span></button>
+                <button class="btn bg-white chuck-btn shadow-sm px-4 py-2 rounded fw-600 mx-auto d-flex flex-row mt-4"><span class="btn-text">Button #1</span><span class="after">></span></button>
             </div>
         </div>
     </div>
 </div>
 <div class="container">
-    <div class="row py-5">
+    <div class="row py-5 px-xl-5">
         <div class="col-12 col-lg-6 py-5 ps-xl-5 my-lg-auto">
-            <p class="h1 lh-sm">
+            <p class="h2 lh-sm">
                 Hier komt de 
                 <span class="underline position-relative fw-600">succesvolle</span>
                 afgewerkte producten
@@ -229,23 +229,23 @@
             </div>
         </div>
         <div class="col-12 col-lg-6 py-lg-5 ps-xl-5">
-            <div class="row g-0 g-lg-5 justify-content-center">
+            <div class="row g-0 gy-lg-4 justify-content-end">
                 <div class="col-12 col-md-4 col-lg-9 col-xl-7">
-                    <div class="border-start py-0 px-3 numbercard">
+                    <div class="border-start py-2 px-3 numbercard">
                         <h3 class="fw-bold">9999</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-9 col-xl-7">
-                    <div class="border-start py-0 px-3 numbercard">
+                    <div class="border-start py-2 px-3 numbercard">
                         <h3 class="fw-bold">9999</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-9 col-xl-7">
-                    <div class="border-start py-0 px-3 numbercard">
+                    <div class="border-start py-2 px-3 numbercard">
                         <h3 class="fw-bold">9999</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </div>
                 </div>
             </div>
@@ -254,18 +254,18 @@
 </div>
 <div class="container pb-5">
     <div class="row pt-0 pb-3 py-md-5 justify-content-center">
-        <div class="col-12 col-md-8 col-lg-7 col-xl-5">
-            <p class="h1 text-center lh-sm">
+        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+            <p class="h2 text-center lh-sm">
                 Wat vinden 
                 <span class="underline position-relative fw-600">gebruikers</span>
                 van onze diensten?
             </p>
         </div>
     </div>
-    <div class="row py-5 gy-5 gx-3 gx-xl-5">
+    <div class="row py-5 gy-md-5 gy-lg-0">
         <div class="col-12 col-lg-4 px-xl-5">
             <div class="card text-center border-0 rounded shadow-sm">
-                <div class="card-body py-3 px-5">
+                <div class="card-body py-3 px-4">
                   <p class="card-text">
                       Lorem ipsum dolor sit amet,
                       consectetur adipiscing elit, sed 
@@ -290,7 +290,7 @@
         </div>
         <div class="col-12 col-lg-4 px-xl-5">
             <div class="card text-center border-0 rounded shadow-sm">
-                <div class="card-body py-3 px-5">
+                <div class="card-body py-3 px-4">
                   <p class="card-text">
                       Lorem ipsum dolor sit amet,
                       consectetur adipiscing elit, sed 
@@ -315,7 +315,7 @@
         </div>
         <div class="col-12 col-lg-4 px-xl-5">
             <div class="card text-center border-0 rounded shadow-sm">
-                <div class="card-body py-3 px-5">
+                <div class="card-body py-3 px-4">
                   <p class="card-text">
                       Lorem ipsum dolor sit amet,
                       consectetur adipiscing elit, sed 
@@ -499,9 +499,9 @@
 </div>
 <div class="container-fluid bg-main-color">
     <div class="container py-5">
-        <div class="row">
-            <div class="col-12 col-lg-6 text-white pe-xl-5 py-lg-5">
-                <p class="h1 lh-sm">
+        <div class="row px-xl-5 justify-content-center">
+            <div class="col-12 col-lg-6 col-xl-5 text-white pe-xl-5 py-lg-5">
+                <p class="h2 lh-sm pe-xl-5">
                     Contacteer ons nu
                     <span class="position-relative fw-600">vrijblijvend
                         <svg class="position-absolute w-100 start-0" style="bottom: -1rem" version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -513,7 +513,7 @@
                         </svg>
                     </span>
                 </p>
-                <div class="pe-xl-5">
+                <div class="pe-xl-4">
                     <p class="py-5 pe-xl-5">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
