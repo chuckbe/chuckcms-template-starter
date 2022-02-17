@@ -81,12 +81,12 @@
 
 @section('content')
 <div class="container py-5">
-    <div class="row">
+    <div class="row px-xl-5">
         <div class="col-12">
-            <h1>Een blogpagina overview</h1>
+            <h1 class="display-5" style="font-weight: 500">Een blogpagina overview</h1>
         </div>
     </div>
-    <div class="row pt-4">
+    <div class="row pt-4 px-xl-5">
         <div class="col-12 col-lg-6 d-flex">
             <div class="me-auto rounded overflow-hidden tile h-100 scale" style="background-image: url({{asset('chuckbe/chuckcms-template-starter/img/pillows.jpg')}});"></div>
         </div>
@@ -101,6 +101,124 @@
                     laboore et dolore magna aliqua. Ut
                 </p>
                 <a href="#" class="text-color-main text-decoration-none mt-4">Lees meer</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-5">
+    <div class="row px-xl-5 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-5 py-4 d-flex">
+            <div class="card border-0" style="max-width: 25rem">
+                <div class="px-3">
+                    <img src="{{asset('chuckbe/chuckcms-template-starter/img/pillows.jpg')}}" class="card-img-top rounded" alt="...">
+                </div>
+                <div class="card-body">
+                    <p class="small text-muted mb-0">December 24, 2021</p>
+                    <p class="card-title h4">
+                        Hier Komt een uitgelichte blogpost
+                    </p>
+                    <p class="card-text pe-xl-5">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna
+                    </p>
+                    <a href="#" class="text-color-main text-decoration-none mt-4">Lees meer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 py-4 d-flex">
+            <div class="card border-0" style="max-width: 25rem">
+                <div class="px-3">
+                    <img src="{{asset('chuckbe/chuckcms-template-starter/img/pillows.jpg')}}" class="card-img-top rounded" alt="...">
+                </div>
+                <div class="card-body">
+                    <p class="small text-muted mb-0">December 24, 2021</p>
+                    <p class="card-title h4">
+                        Hier Komt een uitgelichte blogpost
+                    </p>
+                    <p class="card-text pe-xl-5">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna
+                    </p>
+                    <a href="#" class="text-color-main text-decoration-none mt-4">Lees meer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 py-4 d-flex">
+            <div class="card border-0" style="max-width: 25rem">
+                <div class="px-3">
+                    <img src="{{asset('chuckbe/chuckcms-template-starter/img/pillows.jpg')}}" class="card-img-top rounded" alt="...">
+                </div>
+                <div class="card-body">
+                    <p class="small text-muted mb-0">December 24, 2021</p>
+                    <p class="card-title h4">
+                        Hier Komt een uitgelichte blogpost
+                    </p>
+                    <p class="card-text pe-xl-5">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna
+                    </p>
+                    <a href="#" class="text-color-main text-decoration-none mt-4">Lees meer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 py-4 d-flex">
+            <div class="card border-0" style="max-width: 25rem">
+                <div class="px-3">
+                    <img src="{{asset('chuckbe/chuckcms-template-starter/img/pillows.jpg')}}" class="card-img-top rounded" alt="...">
+                </div>
+                <div class="card-body">
+                    <p class="small text-muted mb-0">December 24, 2021</p>
+                    <p class="card-title h4">
+                        Hier Komt een uitgelichte blogpost
+                    </p>
+                    <p class="card-text pe-xl-5">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna
+                    </p>
+                    <a href="#" class="text-color-main text-decoration-none mt-4">Lees meer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 py-4 d-flex">
+            <div class="card border-0" style="max-width: 25rem">
+                <div class="px-3">
+                    <img src="{{asset('chuckbe/chuckcms-template-starter/img/pillows.jpg')}}" class="card-img-top rounded" alt="...">
+                </div>
+                <div class="card-body">
+                    <p class="small text-muted mb-0">December 24, 2021</p>
+                    <p class="card-title h4">
+                        Hier Komt een uitgelichte blogpost
+                    </p>
+                    <p class="card-text pe-xl-5">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna
+                    </p>
+                    <a href="#" class="text-color-main text-decoration-none mt-4">Lees meer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 py-4 d-flex">
+            <div class="card border-0" style="max-width: 25rem">
+                <div class="px-3">
+                    <img src="{{asset('chuckbe/chuckcms-template-starter/img/pillows.jpg')}}" class="card-img-top rounded" alt="...">
+                </div>
+                <div class="card-body">
+                    <p class="small text-muted mb-0">December 24, 2021</p>
+                    <p class="card-title h4">
+                        Hier Komt een uitgelichte blogpost
+                    </p>
+                    <p class="card-text pe-xl-5">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna
+                    </p>
+                    <a href="#" class="text-color-main text-decoration-none mt-4">Lees meer</a>
+                </div>
             </div>
         </div>
     </div>
