@@ -133,7 +133,7 @@
             </div>
         </div>
         <div class="col-12 col-lg-6 d-flex">
-            <div class="me-0 me-xl-5 ms-auto rounded overflow-hidden tile h-100 scale" style="background-image: url({{asset('chuckbe/chuckcms-template-starter/img/map.png')}}); background-position: center"></div>
+            <div class="me-0 me-xl-5 ms-auto rounded overflow-hidden tile h-100 scale" style="background-image: url({{asset('chuckbe/chuckcms-template-starter/img/map.jpg')}}); background-position: center"></div>
         </div>
     </div>
 </div>
