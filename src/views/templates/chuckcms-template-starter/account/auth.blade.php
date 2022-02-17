@@ -103,7 +103,7 @@ body {
 <div class="container">
   <div class="row py-5 flex-column-reverse flex-lg-row">
     <div class="col-12 col-lg-6 ps-xl-5 pt-5 pt-lg-0">
-        <p class="h1 lh-base">
+        <p class="h2 lh-base">
             Hier kan je inloggen in je account of registeren
         </p>
         <div class="">
