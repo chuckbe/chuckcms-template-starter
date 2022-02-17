@@ -134,7 +134,6 @@ body {
                 </span>
             @endif
             </div>
-            {{--  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>  --}}
             
             <div class="row">
                 <div class="col text-end mt-2">
@@ -156,7 +155,7 @@ body {
                       </span>
                     </p>
                     <p>
-                      <span class="fw-600">Heb je nog geen account?</span> <a href="{{ URL::to('password/reset') }}" class="text-color-main mt-auto ms-auto">Register dan hier</a>
+                      <span class="fw-600">Heb je nog geen account?</span> <a href="{{ URL::to('register') }}" class="text-color-main mt-auto ms-auto">Register dan hier</a>
                     </p>
                   </div>
               </div>
@@ -171,9 +170,9 @@ body {
 </div>
 <div class="container-fluid bg-main-color">
   <div class="container py-5">
-      <div class="row">
-          <div class="col-12 col-lg-6 text-white pe-xl-5 py-lg-5">
-              <p class="h1 lh-sm">
+      <div class="row px-xl-5 justify-content-center">
+          <div class="col-12 col-lg-6 col-xl-5 text-white pe-xl-5 py-lg-5">
+              <p class="h2 lh-sm pe-xl-5">
                   Contacteer ons nu
                   <span class="position-relative fw-600">vrijblijvend
                       <svg class="position-absolute w-100 start-0" style="bottom: -1rem" version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -185,7 +184,7 @@ body {
                       </svg>
                   </span>
               </p>
-              <div class="pe-xl-5">
+              <div class="pe-xl-4">
                   <p class="py-5 pe-xl-5">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
