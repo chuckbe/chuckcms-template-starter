@@ -343,7 +343,7 @@ body {
   }
   .blog-socials{
     position: absolute;
-    padding: 3rem
+    padding: 0.5rem 4rem
   }
   .blog-socials ul{
     display: block !important

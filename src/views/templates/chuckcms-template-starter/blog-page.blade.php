@@ -100,8 +100,8 @@
         </div>
     </div>
 </div>
-<div class="container py-3 py-lg-5 px-xl-5 position-relative">
-    <div class="row px-xl-5 justify-content-between">
+<div class="container py-3 px-xl-5 position-relative">
+    <div class="row px-xl-5 justify-content-between position-relative">
         <div class="col-12 col-lg-10 col-xl-8 px-lg-5 mx-lg-5">
             <div class="blog-socials top-0 end-0 py-3">
                 <ul class="list-unstyled d-flex">
