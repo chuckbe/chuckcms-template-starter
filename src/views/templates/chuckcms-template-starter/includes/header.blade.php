@@ -26,8 +26,8 @@
 
 <div class="container bg-none">
     <nav class="navbar navbar-expand-lg navbar-light bg-none my-2 ps-0 pe-0">
-      <a class="navbar-brand" href="{{ ChuckSite::getSite('domain') }}"><img src="{{ ChuckSite::getSite('domain') }}{{ ChuckSite::getSetting('logo.href') }}" alt="{{ config('app.name', 'Laravel') }}" height="60"></a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand order-1" href="{{ ChuckSite::getSite('domain') }}"><img src="{{ ChuckSite::getSite('domain') }}{{ ChuckSite::getSetting('logo.href') }}" alt="{{ config('app.name', 'Laravel') }}" height="60"></a>
+      <button class="navbar-toggler order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>               
@@ -52,7 +52,7 @@
     </div>
     @endif
 
-      <div class="collapse navbar-collapse font-weight-bold" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse order-4 order-lg-1 font-weight-bold" id="navbarSupportedContent">
         {!! ChuckMenu::renderFrontEnd('chuckcms-template-starter', 'menu-front-end', 'header') !!}
       </div>
     </nav>
