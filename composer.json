@@ -1,0 +1,33 @@
+{
+    "name": "chuckbe/chuckcms-template-starter",
+    "description": "A ChuckCMS template named 'Starter' - lightweight and responsive.",
+    "keywords": ["chuckbe", "chuckcms", "cms", "laravel", "php"],
+    "homepage": "https://github.com/chuckbe/chuckcms-template-starter",
+    "require": {
+        "php": ">=7.2.0",
+        "laravel/framework": "~5.8||^6.20.26||^7.30.4",
+        "chuckbe/chuckcms": "~0.1"
+    },
+    "authors": [
+        {
+            "name": "Karel Brijs",
+            "email": "karel@chuck.be"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Chuckbe\\ChuckcmsTemplateStarter\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chuckbe\\ChuckcmsTemplateStarter\\ChuckcmsTemplateStarterServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
