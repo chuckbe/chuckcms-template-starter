@@ -180,7 +180,7 @@
                             <button class="btn btn-blue-t btn-sm mt-0 ms-auto me-0 ce_subtractionCartProductBtn" style="background-color: #EAECEF; border-radius: 50% 0 0 50%;" type="button" data-product-id="" data-row-id=""><b>-</b></button>
                         </div>
                         <div class="col-6 col-md-6 mx-0 px-0">
-                            <input type="number" class="form-control form-control-sm d-inline-block ce_productCartQuantityInput" min="1" max="" value="2" name="quantity" data-product-id="" data-row-id="" readonly>
+                            <input type="number" class="form-control form-control-sm d-inline-block ce_productCartQuantityInput border-0 rounded-0" min="1" max="" value="2" name="quantity" data-product-id="" data-row-id="" readonly>
                         </div>
                         <div class="col-1 col-md-3 p-0 d-flex">
                             <button class="btn btn-blue-t btn-sm mt-0 me-auto ce_additionCartProductBtn" type="button" data-product-id="" data-row-id="" style="background-color: #EAECEF; border-radius: 0% 50% 50% 0;"><b>+</b></button>
@@ -216,7 +216,7 @@
                             <button class="btn btn-blue-t btn-sm mt-0 ms-auto me-0 ce_subtractionCartProductBtn" style="background-color: #EAECEF; border-radius: 50% 0 0 50%;" type="button" data-product-id="" data-row-id=""><b>-</b></button>
                         </div>
                         <div class="col-6 col-md-6 mx-0 px-0">
-                            <input type="number" class="form-control form-control-sm d-inline-block ce_productCartQuantityInput" min="1" max="" value="2" name="quantity" data-product-id="" data-row-id="" readonly>
+                            <input type="number" class="form-control form-control-sm d-inline-block ce_productCartQuantityInput border-0 rounded-0" min="1" max="" value="2" name="quantity" data-product-id="" data-row-id="" readonly>
                         </div>
                         <div class="col-1 col-md-3 p-0 d-flex">
                             <button class="btn btn-blue-t btn-sm mt-0 me-auto ce_additionCartProductBtn" type="button" data-product-id="" data-row-id="" style="background-color: #EAECEF; border-radius: 0% 50% 50% 0;"><b>+</b></button>
@@ -252,7 +252,7 @@
                             <button class="btn btn-blue-t btn-sm mt-0 ms-auto me-0 ce_subtractionCartProductBtn" style="background-color: #EAECEF; border-radius: 50% 0 0 50%;" type="button" data-product-id="" data-row-id=""><b>-</b></button>
                         </div>
                         <div class="col-6 col-md-6 mx-0 px-0">
-                            <input type="number" class="form-control form-control-sm d-inline-block ce_productCartQuantityInput" min="1" max="" value="2" name="quantity" data-product-id="" data-row-id="" readonly>
+                            <input type="number" class="form-control form-control-sm d-inline-block ce_productCartQuantityInput border-0 rounded-0" min="1" max="" value="2" name="quantity" data-product-id="" data-row-id="" readonly>
                         </div>
                         <div class="col-1 col-md-3 p-0 d-flex">
                             <button class="btn btn-blue-t btn-sm mt-0 me-auto ce_additionCartProductBtn" type="button" data-product-id="" data-row-id="" style="background-color: #EAECEF; border-radius: 0% 50% 50% 0;"><b>+</b></button>
@@ -288,7 +288,7 @@
                             <button class="btn btn-blue-t btn-sm mt-0 ms-auto me-0 ce_subtractionCartProductBtn" style="background-color: #EAECEF; border-radius: 50% 0 0 50%;" type="button" data-product-id="" data-row-id=""><b>-</b></button>
                         </div>
                         <div class="col-6 col-md-6 mx-0 px-0">
-                            <input type="number" class="form-control form-control-sm d-inline-block ce_productCartQuantityInput" min="1" max="" value="2" name="quantity" data-product-id="" data-row-id="" readonly>
+                            <input type="number" class="form-control form-control-sm d-inline-block ce_productCartQuantityInput border-0 rounded-0" min="1" max="" value="2" name="quantity" data-product-id="" data-row-id="" readonly>
                         </div>
                         <div class="col-1 col-md-3 p-0 d-flex">
                             <button class="btn btn-blue-t btn-sm mt-0 me-auto ce_additionCartProductBtn" type="button" data-product-id="" data-row-id="" style="background-color: #EAECEF; border-radius: 0% 50% 50% 0;"><b>+</b></button>
@@ -324,7 +324,7 @@
                             <button class="btn btn-blue-t btn-sm mt-0 ms-auto me-0 ce_subtractionCartProductBtn" style="background-color: #EAECEF; border-radius: 50% 0 0 50%;" type="button" data-product-id="" data-row-id=""><b>-</b></button>
                         </div>
                         <div class="col-6 col-md-6 mx-0 px-0">
-                            <input type="number" class="form-control form-control-sm d-inline-block ce_productCartQuantityInput" min="1" max="" value="2" name="quantity" data-product-id="" data-row-id="" readonly>
+                            <input type="number" class="form-control form-control-sm d-inline-block ce_productCartQuantityInput border-0 rounded-0" min="1" max="" value="2" name="quantity" data-product-id="" data-row-id="" readonly>
                         </div>
                         <div class="col-1 col-md-3 p-0 d-flex">
                             <button class="btn btn-blue-t btn-sm mt-0 me-auto ce_additionCartProductBtn" type="button" data-product-id="" data-row-id="" style="background-color: #EAECEF; border-radius: 0% 50% 50% 0;"><b>+</b></button>
