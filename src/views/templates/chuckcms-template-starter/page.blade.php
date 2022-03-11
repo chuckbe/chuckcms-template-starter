@@ -75,6 +75,7 @@
 
 @section('content')
 
+@if(class_exists(ChuckProduct::class))
 <div class="container">
 	<div class="row">
 		@foreach(ChuckProduct::all() as $product)
@@ -96,7 +97,7 @@
         @endforeach
 	</div>
 </div>
-
+@endif
     @if($pageblocks !== null)
         @foreach($pageblocks as $pageblock)
             {!! $pageblock['body'] !!}
