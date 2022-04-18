@@ -16,10 +16,10 @@ class ChuckcmsTemplateStarterTableSeeder extends Seeder
     {
         // php artisan db:seed --class=Chuckbe\\ChuckcmsTemplateStarter\\seeds\\ChuckcmsTemplateStarterTableSeeder
         $fonts = [];
-        $fonts['raw'] = 'Poppins:100,200,300,400,500,600,700,800,900';
+        $fonts['raw'] = 'Epilogue:100,200,300,400,500,600,700,800,900';
 
         $css = [];
-        $css['bootstrap']['href'] = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css';
+        $css['bootstrap']['href'] = 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css';
         $css['bootstrap']['asset'] = 'false';
 
         $css['custom']['href'] = 'chuckbe/chuckcms-template-starter/css/custom.css';
@@ -32,7 +32,7 @@ class ChuckcmsTemplateStarterTableSeeder extends Seeder
         $js['popperjs']['href'] = 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js';
         $js['popperjs']['asset'] = 'false';
 
-        $js['bootstrapjs']['href'] = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js';
+        $js['bootstrapjs']['href'] = 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js';
         $js['bootstrapjs']['asset'] = 'false';
 
         $js['masonry']['href'] = 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js';

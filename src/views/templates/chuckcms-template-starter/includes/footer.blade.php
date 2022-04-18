@@ -1,66 +1,56 @@
-<div class="container mt-5">
+<footer class="container">
     <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 mb-5 mb-md-0">
-            <ul class="list-unstyled">
-                <li class="font-weight-bold"><h3>{{ ChuckTemplate::forTemplate('chuckcms-template-starter')->getSetting('footer_subscribe_title') }}</h3><li>
-                <li><span class="font-weight-bold">{{ ChuckTemplate::forTemplate('chuckcms-template-starter')->getSetting('footer_subscribe_subtitle') }}</span> <br>{{ ChuckTemplate::forTemplate('chuckcms-template-starter')->getSetting('footer_subscribe_subsubtitle') }}</li>
-            </ul>
-            <form action="">
-                <div class="row">
-                    <div class="col border-bottom mb-2">
-                        <input type="text" class="form-control-plaintext" placeholder="Naam & Voornaam">
-                    </div>
-                    <div class="col border-bottom mx-sm-3 mb-2">
-                        <input type="email" class="form-control-plaintext" placeholder="E-mailadres">
-                    </div>
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-none mt-3 mb-3 ps-0 pe-0">
+                <a class="navbar-brand" href="{{ ChuckSite::getSite('domain') }}"><img src="{{ ChuckSite::getSite('domain') }}{{ ChuckSite::getSetting('logo.href') }}" alt="{{ config('app.name', 'Laravel') }}" height="60"></a>
+                <div class="footernav font-weight-bold fw-bold ms-auto">
+                    {!! ChuckMenu::renderFrontEnd('chuckcms-template-starter', 'menu-front-end', 'footer') !!}
                 </div>
-                <div class="w-100"></div>
-                <div class="row">
-                    <div class="col-8">
-                        <div class="form-check pt-2">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Ik ga akkoord met de privacy policy
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <button type="submit" class="btn btn-dark mb-2 float-right rounded-0">Subscribe</button>
-                    </div>
+                <div class="socials">
+                    <ul class="list-unstyled list-inline social-icons d-flex mb-0 ms-3">
+                        @if(ChuckSite::getSetting('socialmedia.instagram') !== null)
+                        <li class="list-inline-item">
+                            <a target="_blank" href="{{ ChuckSite::getSetting('socialmedia.instagram') }}"> <i class="fab fa-instagram text-color-main"></i> </a>
+                        </li>
+                        @endif
+                        @if(ChuckSite::getSetting('socialmedia.facebook') !== null)
+                        <li class="list-inline-item">
+                            <a target="_blank" href="{{ ChuckSite::getSetting('socialmedia.facebook') }}"> <i class="fab fa-facebook-f text-color-main"></i> </a>
+                        </li>
+                        @endif
+                        @if(ChuckSite::getSetting('socialmedia.pinterest') !== null)
+                        <li class="list-inline-item">
+                            <a target="_blank" href="{{ ChuckSite::getSetting('socialmedia.pinterest') }}"> <i class="fab fa-pinterest-p text-color-main"></i> </a>
+                        </li>
+                        @endif
+                        @if(ChuckSite::getSetting('socialmedia.twitter') !== null)
+                        <li class="list-inline-item">
+                            <a target="_blank" href="{{ ChuckSite::getSetting('socialmedia.twitter') }}"> <i class="fab fa-twitter text-color-main"></i> </a>
+                        </li>
+                        @endif
+                    </ul>
                 </div>
-            </form>
-        </div>
-        <div class="col-6 col-sm-6 col-md-3">
-            <ul class="list-unstyled">
-                <li class="font-weight-bold">{{ ChuckTemplate::forTemplate('chuckcms-template-starter')->getSetting('footer_address_title') }}<li>
-                <li>{{ ChuckSite::getSetting('company.street') }} {{ ChuckSite::getSetting('company.housenumber') }}</li>
-                <li>{{ ChuckSite::getSetting('company.postalcode') }} {{ ChuckSite::getSetting('company.city') }}</li>
-                <li class="mt-3 font-weight-bold">{{ ChuckTemplate::forTemplate('chuckcms-template-starter')->getSetting('footer_contact_title') }}</li>
-                <li><a href="mailto:{{ ChuckSite::getSetting('company.email') }}" class="text-dark">{{ ChuckSite::getSetting('company.email') }}</a></li>
-                <li><a href="tel:{{ ChuckSite::getSetting('company.tel') }}" class="text-dark">{{ ChuckSite::getSetting('company.tel') }}</a></li>
-                <li class="mt-3">{{ ChuckSite::getSetting('company.vat') }}</li>
-            </ul>
-        </div>
-        <div class="col-6 col-sm-6 col-md-3">
-            <ul class="list-unstyled">
-                <li class="font-weight-bold">{{ ChuckTemplate::forTemplate('chuckcms-template-starter')->getSetting('footer_hours_title') }}<li>
-                @foreach( explode('|', ChuckTemplate::forTemplate('chuckcms-template-starter')->getSetting('footer_hours_hours') ) as $hour)
-                <li>{{ $hour }}</li>
-                @endforeach
-            </ul>
+            </nav>
         </div>
     </div>
-    <hr>
-    <div class="row">
-            <div class="col">
-                <ul class="list-unstyled list-inline pull-left">
-                    <li><a href="#" class="text-dark">Disclaimer</a></li>
-                    <li><a href="#" class="text-dark">Cookie Policy</a></li>
-                    <li><a href="#" class="text-dark">Privacy Policy</a></li>
+    <hr class="bg-main-color" style="opacity: 1; height: 2px;">
+    <div class="row py-3">
+            <div class="col-12 col-xl-6 d-flex">
+                <ul class="list-unstyled list-inline d-flex flex-column flex-md-row mx-md-auto ms-xl-0">
+                    <li class="py-2 ps-0"><a href="#" class="text-muted">Privacybeleid</a></li>
+                    <li class="py-2 ps-0 ps-md-3"><a href="#" class="text-muted">Cookieverklaring</a></li>
+                    <li class="py-2 ps-0 ps-md-3"><a href="#" class="text-muted">Algemene Voorwaarden</a></li>
+                    <li class="py-2 ps-0 ps-md-3"><a href="#" class="text-muted">Disclaimer</a></li>
                 </ul>
             </div>
-            <div class="col">
-                <p class="text-muted pull-right text-right">{{ ChuckSite::getSetting('company.name') }} © {{ date('Y') }} <br> powered by chuck.be</p>
+            <div class="col-12 col-xl-6 d-flex py-2">
+                <span class="text-muted ms-auto me-auto me-xl-0 text-center small">
+                    © Copyright{{ date('Y') }}
+                    | 
+                    All Rights Reserved 
+                    | 
+                    Powered by chuck.be
+                </span>
             </div>
         </div>
-</div>
+</footer>

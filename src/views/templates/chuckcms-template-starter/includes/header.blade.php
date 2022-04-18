@@ -1,4 +1,4 @@
-<div class="container-fluid bg-dark">
+{{-- <div class="container-fluid bg-dark">
     <div class="container">
         <nav class="navbar py-0">
             <ul class="ml-auto mb-0">
@@ -22,21 +22,21 @@
             </ul>
         </nav>
     </div>
-</div>
+</div> --}}
 
 <div class="container bg-none">
-    <nav class="navbar navbar-expand-lg navbar-light bg-none mt-3 mb-3 pl-0 pr-0">
-      <a class="navbar-brand" href="{{ ChuckSite::getSite('domain') }}"><img src="{{ ChuckSite::getSite('domain') }}{{ ChuckSite::getSetting('logo.href') }}" alt="{{ config('app.name', 'Laravel') }}" height="40"></a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-none my-2 ps-0 pe-0">
+      <a class="navbar-brand order-1" href="{{ ChuckSite::getSite('domain') }}"><img src="{{ ChuckSite::getSite('domain') }}{{ ChuckSite::getSetting('logo.href') }}" alt="{{ config('app.name', 'Laravel') }}" height="60"></a>
+      <button class="navbar-toggler order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>               
     </button>
 
     @if(class_exists('\ChuckEcommerce'))
-    <div class="dropdown my-4 ml-auto order-2 order-lg-4">
-        <a class="m-2 shop-icon" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
-        <div class="dropdown-menu dropdown-menu-account dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+    <div class="dropdown mt-4 mb-3 pb-1 ms-auto order-2 order-lg-4">
+        <a class="m-2 shop-icon text-color-main text-decoration-none" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fal fa-user"></i></a>
+        <div class="dropdown-menu dropdown-menu-account dropdown-menu-right mt-2" aria-labelledby="dropdownMenuLink">
             @if(Auth::check())
             <a class="dropdown-item" href="{{ route('module.ecommerce.account.index') }}">Account</a>
             <a class="dropdown-item" href="{{ route('module.ecommerce.account.order.index') }}">Bestellingen</a>
@@ -52,40 +52,9 @@
     </div>
     @endif
 
-      <div class="collapse navbar-collapse font-weight-bold" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse order-4 order-lg-1 font-weight-bold" id="navbarSupportedContent">
         {!! ChuckMenu::renderFrontEnd('chuckcms-template-starter', 'menu-front-end', 'header') !!}
       </div>
     </nav>
 </div>
 
-{{-- 
-<nav class="navbar navbar-default navbar-static-top" style="margin-bottom:0px!important">
-    <div class="container">
-        <div class="navbar-header">
-
-            <!-- Collapsed Hamburger -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }}
-            </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="app-navbar-collapse">
-            <!-- Left Side Of Navbar -->
-            <ul class="nav navbar-nav">
-                &nbsp;
-            </ul>
-            
-            {!! ChuckMenu::renderFrontEnd('chuckcms-template-starter', 'menu-front-end', 'header') !!}
-
-            
-        </div>
-    </div>
-</nav> --}}
