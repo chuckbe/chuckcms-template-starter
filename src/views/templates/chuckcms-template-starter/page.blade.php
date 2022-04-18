@@ -12,11 +12,11 @@ $lang = \LaravelLocalization::getCurrentLocale();
 @endsection
 
 @section('css')
-
+<link rel="stylesheet" href="{{ route('page.css', ['page' => $page->id]) }}">
 @endsection
 
 @section('scripts')
-
+<script src="{{ route('page.js', ['page' => $page->id]) }}" type="text/javascript"></script>
 @endsection
 
 @section('content')
@@ -41,6 +41,7 @@ $lang = \LaravelLocalization::getCurrentLocale();
         </div>
     </div>
 </div>
+
 <div class="container">
     <div class="row pt-0 pb-3 py-lg-5 justify-content-center">
         <div class="col-12 col-md-8 col-lg-7 col-xl-6">
