@@ -66,11 +66,11 @@
 @endsection
 
 @section('css')
-
+<link rel="stylesheet" href="{{ route('page.css', ['page' => $page->id]) }}">
 @endsection
 
 @section('scripts')
-
+<script src="{{ route('page.js', ['page' => $page->id]) }}" type="text/javascript"></script>
 @endsection
 
 @section('content')
