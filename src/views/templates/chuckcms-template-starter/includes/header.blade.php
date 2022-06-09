@@ -44,8 +44,8 @@
             <div class="dropdown-divider my-0"></div>
             <a class="dropdown-item py-2" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Uitloggen</a>
             @else
-            <a class="dropdown-item" href="{{ route('login') }}">Aanmelden</a>
-            <a class="dropdown-item" href="{{ route('register') }}">Account maken</a>
+            <a class="dropdown-item pt-2" href="{{ route('login') }}">Aanmelden</a>
+            <a class="dropdown-item py-2" href="{{ route('register') }}">Account maken</a>
             @endif
         </div>
         @include($template->hintpath.'::templates.' . $template->slug . '.ecommerce._header_cart')
