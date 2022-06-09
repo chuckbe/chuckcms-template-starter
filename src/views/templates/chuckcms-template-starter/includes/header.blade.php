@@ -35,14 +35,14 @@
 
     @if(class_exists('\ChuckEcommerce'))
     <div class="dropdown mt-4 mb-3 pb-1 ms-auto order-2 order-lg-4">
-        <a class="m-2 shop-icon text-color-main text-decoration-none" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fal fa-user"></i></a>
-        <div class="dropdown-menu dropdown-menu-account dropdown-menu-right mt-2" aria-labelledby="dropdownMenuLink">
+        <a class="m-2 shop-icon text-color-main text-decoration-none" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-user"></i></a>
+        <div class="dropdown-menu dropdown-menu-account dropdown-menu-right mt-2 py-0" aria-labelledby="dropdownMenuLink">
             @if(Auth::check())
-            <a class="dropdown-item" href="{{ route('module.ecommerce.account.index') }}">Account</a>
-            <a class="dropdown-item" href="{{ route('module.ecommerce.account.order.index') }}">Bestellingen</a>
-            <a class="dropdown-item" href="{{ route('module.ecommerce.account.address.index') }}">Adressen</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Uitloggen</a>
+            <a class="dropdown-item pt-2" href="{{ route('module.ecommerce.account.index') }}">Account</a>
+            <a class="dropdown-item pt-2" href="{{ route('module.ecommerce.account.order.index') }}">Bestellingen</a>
+            <a class="dropdown-item pt-2" href="{{ route('module.ecommerce.account.address.index') }}">Adressen</a>
+            <div class="dropdown-divider my-0"></div>
+            <a class="dropdown-item py-2" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Uitloggen</a>
             @else
             <a class="dropdown-item" href="{{ route('login') }}">Aanmelden</a>
             <a class="dropdown-item" href="{{ route('register') }}">Account maken</a>

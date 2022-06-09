@@ -137,7 +137,7 @@ body {
             
             <div class="row">
                 <div class="col text-end mt-2">
-                  <button class="btn chuck-btn bg-main-color text-white px-4 rounded d-flex flex-row" type="submit"><span class="btn-text">Button #1</span><span class="after">&gt;</span></button>
+                  <button class="btn chuck-btn bg-main-color text-white px-4 rounded d-flex flex-row" type="submit"><span class="btn-text">Aanmelden</span><span class="after">&gt;</span></button>
                 </div>
                 <div class="col-7 text-end mt-2 d-flex">
                     <a href="{{ URL::to('password/reset') }}" class="text-color-main mt-auto ms-auto">Wachtwoord vergeten?</a>

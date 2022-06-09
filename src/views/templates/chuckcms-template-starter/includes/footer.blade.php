@@ -36,21 +36,20 @@
     <hr class="bg-main-color" style="opacity: 1; height: 2px;">
     <div class="row py-3">
             <div class="col-12 col-xl-6 d-flex">
-                <ul class="list-unstyled list-inline d-flex flex-column flex-md-row mx-md-auto ms-xl-0">
-                    <li class="py-2 ps-0"><a href="#" class="text-muted">Privacybeleid</a></li>
-                    <li class="py-2 ps-0 ps-md-3"><a href="#" class="text-muted">Cookieverklaring</a></li>
-                    <li class="py-2 ps-0 ps-md-3"><a href="#" class="text-muted">Algemene Voorwaarden</a></li>
+                <ul class="list-unstyled list-inline d-flex flex-column flex-md-row mx-md-auto ms-xl-0 mb-0">
+                    <li class="py-2 ps-0"><a href="#" class="text-muted">Privacy</a></li>
+                    <li class="py-2 ps-0 ps-md-3"><a href="#" class="text-muted">Cookies</a></li>
+                    <li class="py-2 ps-0 ps-md-3"><a href="#" class="text-muted">Voorwaarden</a></li>
                     <li class="py-2 ps-0 ps-md-3"><a href="#" class="text-muted">Disclaimer</a></li>
                 </ul>
             </div>
-            <div class="col-12 col-xl-6 d-flex py-2">
+            <div class="col-12 col-xl-6 d-flex pt-2">
                 <span class="text-muted ms-auto me-auto me-xl-0 text-center small">
-                    © Copyright{{ date('Y') }}
-                    | 
-                    All Rights Reserved 
-                    | 
-                    Powered by chuck.be
+                    © {{ date('Y') }} Chuck | Alle rechten voorbehouden
                 </span>
+            </div>
+            <div class="col-12 text-end">
+                <span class="text-muted ms-auto small">Powered by chuck.be</span>
             </div>
         </div>
 </footer>

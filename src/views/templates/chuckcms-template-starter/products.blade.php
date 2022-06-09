@@ -90,7 +90,7 @@ $lang = \LaravelLocalization::getCurrentLocale();
             <p class="h2 text-center lh-sm">
                 Hier komen enkele 
                 <span class="underline position-relative fw-600">interessante</span>
-                kenmerken of diensten
+                producten of diensten
             </p>
         </div>
     </div>
@@ -107,129 +107,25 @@ $lang = \LaravelLocalization::getCurrentLocale();
                         </select>
                     </div>
                 </div>
+                @foreach(ChuckProduct::all() as $product)
                 <div class="col-12 col-md-6 col-lg-4 p-3">
                     <div class="card border-0 p-xl-3 product">
                         <div class="p-3 position-relative">
-                            <a href="/shop/detail"><img src="{{asset('chuckbe/chuckcms-template-starter/img/NicePng_rug-png_4456420.png')}}" class="card-img-top shop-img rounded" alt="..."></a>
-                            <div class="d-flex w-100 position-absolute bottom-0 end-0 px-3 addtocarticon"><a href="#" class="text-color-main ms-auto"><i class="fas fa-cart-plus"></i></a></div>
+                            <a href="{{ChuckProduct::fullUrl($product)}}"><img src="{{asset($product->json['images']['image0']['url'])}}" class="card-img-top shop-img rounded" alt="..."></a>
+                            <div class="d-flex w-100 position-absolute bottom-0 end-0 px-3 addtocarticon"><a href="{{ChuckProduct::fullUrl($product)}}" class="text-color-main ms-auto"><i class="fas fa-cart-plus"></i></a></div>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur - <b>€499</b></p>
+                            <p class="card-text">{{ChuckProduct::title($product)}} - <b>{{ChuckProduct::lowestPrice($product)}}</b></p>
                         </div>
                     </div>
                 </div> 
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div class="card border-0 p-xl-3 product">
-                        <div class="p-3 position-relative">
-                            <a href="/shop/detail"><img src="{{asset('chuckbe/chuckcms-template-starter/img/pngkey.com-old-chair-png-4074957.png')}}" class="card-img-top shop-img rounded" alt="..."></a>
-                            <div class="d-flex w-100 position-absolute bottom-0 end-0 px-3 addtocarticon"><a href="#" class="text-color-main ms-auto"><i class="fas fa-cart-plus"></i></a></div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur - <b>€499</b></p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div class="card border-0 p-xl-3 product">
-                        <div class="p-3 position-relative">
-                            <a href="/shop/detail"><img src="{{asset('chuckbe/chuckcms-template-starter/img/NicePng_cactus-vector-png_483004.png')}}" class="card-img-top shop-img rounded" alt="..."></a>
-                            <div class="d-flex w-100 position-absolute bottom-0 end-0 px-3 addtocarticon"><a href="#" class="text-color-main ms-auto"><i class="fas fa-cart-plus"></i></a></div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur - <b>€499</b></p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div class="card border-0 p-xl-3 product">
-                        <div class="p-3 position-relative">
-                            <a href="/shop/detail"><img src="{{asset('chuckbe/chuckcms-template-starter/img/NicePng_cactus-vector-png_483004.png')}}" class="card-img-top shop-img rounded" alt="..."></a>
-                            <div class="d-flex w-100 position-absolute bottom-0 end-0 px-3 addtocarticon"><a href="#" class="text-color-main ms-auto"><i class="fas fa-cart-plus"></i></a></div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur - <b>€499</b></p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div class="card border-0 p-xl-3 product">
-                        <div class="p-3 position-relative">
-                            <a href="/shop/detail"><img src="{{asset('chuckbe/chuckcms-template-starter/img/NicePng_chair-front-view-png_8010222.png')}}" class="card-img-top shop-img rounded" alt="..."></a>
-                            <div class="d-flex w-100 position-absolute bottom-0 end-0 px-3 addtocarticon"><a href="#" class="text-color-main ms-auto"><i class="fas fa-cart-plus"></i></a></div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur - <b>€499</b></p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div class="card border-0 p-xl-3 product">
-                        <div class="p-3 position-relative">
-                            <a href="/shop/detail"><img src="{{asset('chuckbe/chuckcms-template-starter/img/pngkey.com-vintage-design-png-4128831.png')}}" class="card-img-top shop-img rounded" alt="..."></a>
-                            <div class="d-flex w-100 position-absolute bottom-0 end-0 px-3 addtocarticon"><a href="#" class="text-color-main ms-auto"><i class="fas fa-cart-plus"></i></a></div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur - <b>€499</b></p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div class="card border-0 p-xl-3 product">
-                        <div class="p-3 position-relative">
-                            <a href="/shop/detail"><img src="{{asset('chuckbe/chuckcms-template-starter/img/NicePng_chair-front-view-png_8010222.png')}}" class="card-img-top shop-img rounded" alt="..."></a>
-                            <div class="d-flex w-100 position-absolute bottom-0 end-0 px-3 addtocarticon"><a href="#" class="text-color-main ms-auto"><i class="fas fa-cart-plus"></i></a></div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur - <b>€499</b></p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div class="card border-0 p-xl-3 product">
-                        <div class="p-3 position-relative">
-                            <a href="/shop/detail"><img src="{{asset('chuckbe/chuckcms-template-starter/img/pngkey.com-vintage-design-png-4128831.png')}}" class="card-img-top shop-img rounded" alt="..."></a>
-                            <div class="d-flex w-100 position-absolute bottom-0 end-0 px-3 addtocarticon"><a href="#" class="text-color-main ms-auto"><i class="fas fa-cart-plus"></i></a></div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur - <b>€499</b></p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div class="card border-0 p-xl-3 product">
-                        <div class="p-3 position-relative">
-                            <a href="/shop/detail"><img src="{{asset('chuckbe/chuckcms-template-starter/img/NicePng_rug-png_4456420.png')}}" class="card-img-top shop-img rounded" alt="..."></a>
-                            <div class="d-flex w-100 position-absolute bottom-0 end-0 px-3 addtocarticon"><a href="#" class="text-color-main ms-auto"><i class="fas fa-cart-plus"></i></a></div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur - <b>€499</b></p>
-                        </div>
-                    </div>
-                </div> 
-                {{-- @foreach(ChuckProduct::all() as $product)
-                    <div class="col-12 col-md-6 col-lg-4 p-3">
-                        <div class="card border-0 p-xl-3">
-                            <div class="px-3">
-                                <img src="{{asset($product->json['images']['image0']['url'])}}" class="card-img-top shop-img rounded">
-                                <a href="{{ ChuckProduct::fullUrl($product) }}" class="w-100" style="background: url({{ preg_replace( "/%3A/i", ":",implode('/', array_map('rawurlencode', explode('/', ChuckProduct::featuredImage($product))))) }}) no-repeat center center / cover;">
-                                    @foreach(ChuckProduct::images($product) as $imgKey => $image)
-                                    {{dd($image)}}
-                                      @if(!is_null($image['url']) && $image['position']==1)
-                                          <div class="w-100 h-100 inner-bg" style="background: url({{preg_replace( "/%3A/i", ":",implode('/', array_map('rawurlencode', explode('/',  asset($image['url'])))))  }}) no-repeat center center / cover;"></div>
-                                      @endif
-                                    @endforeach
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">{{ChuckProduct::title($product)}} - <b>{{ChuckProduct::lowestPrice($product)}}</b></p>
-                            </div>
-                        </div>
-                    </div> 
-                @endforeach --}}
+                @endforeach
             </div>
         </div>
     </div>
 </div>
+
+
 <div class="container-fluid bg-main-color">
     <div class="container py-5">
         <div class="row px-xl-5 justify-content-center">
