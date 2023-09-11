@@ -4,8 +4,8 @@
     "keywords": ["chuckbe", "chuckcms", "cms", "laravel", "php"],
     "homepage": "https://github.com/chuckbe/chuckcms-template-starter",
     "require": {
-        "php": ">=7.2.0",
-        "laravel/framework": "^6.20.26||^7.30.4||^8.82.2||^9.0"
+        "php": ">=8.0.0",
+        "laravel/framework": "^6.20.26||^7.30.4||^8.82.2||^9.0||^10.0"
     },
     "authors": [
         {
