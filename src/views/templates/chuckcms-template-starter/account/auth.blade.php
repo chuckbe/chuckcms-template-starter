@@ -211,7 +211,7 @@ body {
                               <input type="text" class="form-control" name="gegeven_1" id="gegeven_1"  placeholder="Gegevens #1" required>
                           </div>
                       </div>
-                      {!! Honeypot::generate('chuck_telephone', 'chuck_email') !!}
+                      <x-honeypot />
                       <input type="hidden" value="contact" name="_form_slug">
                       <button class="btn bg-white chuck-btn shadow-sm px-4 py-2 rounded fw-600 me-auto d-flex flex-row mt-4" id="send_form_btn"><span class="btn-text">Button #1</span><span class="after">></span></button>
                   </form>
