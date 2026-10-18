@@ -3,9 +3,13 @@
     "description": "A ChuckCMS template named 'Starter' - lightweight and responsive.",
     "keywords": ["chuckbe", "chuckcms", "cms", "laravel", "php"],
     "homepage": "https://github.com/chuckbe/chuckcms-template-starter",
+    "license": "MIT",
     "require": {
-        "php": ">=8.0.0",
-        "laravel/framework": "^6.20.26||^7.30.4||^8.82.2||^9.0||^10.0"
+        "php": "^8.2",
+        "laravel/framework": "^10.0||^11.0||^12.0||^13.0"
+    },
+    "conflict": {
+        "chuckbe/chuckcms": "<0.3"
     },
     "authors": [
         {
@@ -23,9 +27,7 @@
             "providers": [
                 "Chuckbe\\ChuckcmsTemplateStarter\\ChuckcmsTemplateStarterServiceProvider"
             ],
-            "aliases": {
-                
-            }
+            "aliases": {}
         }
     },
     "minimum-stability": "dev"
